@@ -1,0 +1,41 @@
+//common typography styles
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-secondary);
+}
+
+.heading{
+  font-size: 4.1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: inherit;
+
+  // @include respond(tab-land){
+  //   font-size: 3.7rem;
+  // }
+
+  @include respond(tab-port){
+    font-size: 3.5rem;
+  }
+
+  @include respond(phone-lg){
+    font-size: 3rem;
+  }
+}
+
+.para{
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+
+  // @include respond(tab-port){
+  //   font-size: 1.6rem;
+  // }
+
+
+}
