@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -7,53 +8,43 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CPoppins:400,600,700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
 </head>
+<title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
 <body>
   <header class="header">
 
     <div class="header__logo">
-      <img src="./images/logo.svg" alt="Logo" class="header__logo-img">
+      <img src="./images/logo.svg" alt="Logo" class="header__logo-img"/>
     </div>
 
-    <div class="flex">
-      <div class="flex__item flex__item--image">
-        <figure class="flex__img-container">
-          <img src="./images/illustration-mockups.svg" alt="mockups-img" class="flex__img">
+    <div class="container">
+      <div class="container__item container__item--image">
+        <figure class="container__img-wrapper">
+          <img src="./images/illustration-mockups.svg" alt="mockups-img" class="container__img"/>
         </figure>
       </div>
 
-      <div class="flex__item flex__item--text">
+      <div class="container__item container__item--text">
         <h1 class="heading heading-primary">Build The Community Your Fans Will Love</h1>
-
         <p class="para header__para">Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-        Create connections with your users as you engage in genuine discussion.</p>
-
+          Create connections with your users as you engage in genuine discussion.</p>
         <a href="#" class="btn">Register</a>
-        <div class="social-icons">
-          <i class="fab fa-facebook-f  " aria-hidden="true"></i>
-          <i class="fab fa-twitter " aria-hidden="true"></i>
-          <i class="fab fa-instagram " aria-hidden="true"></i>
-        </div>
-
       </div>
 
     </div>
+    <div class="social">
+      <div class="social-icons">
+        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+      </div>
 
+      <p class="attribution">
+        Challenge by <a class="attribution" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a class="attribution" href="https://safruk.github.io/Safas-website">Safa Ruknuddin &rarr;</a>.
+      </p>
+    </div>
   </header>
-
-
-  <!-- <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
 </body>
 </html>

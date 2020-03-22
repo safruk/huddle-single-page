@@ -1,105 +1,104 @@
-.header{
+// header
+.header {
   height: 100vh;
   padding: 5rem;
   width: 100%;
-  background-image:url('../images/bg-desktop.svg');
+  background-image: url("../images/bg-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
 
-  @include respond(phone-lg){
-    background-image: url('../images/bg-mobile.svg');
+  @include respond(tab-port) {
+    background-image: url("../images/bg-mobile.svg");
   }
-  &__logo{
+
+  &__logo {
     margin-bottom: 5rem;
-    animation: moveInLeft .2s ease-in;
+    animation: moveInLeft 1s ease-in;
   }
 
-  &__logo-img{
+  &__logo-img {
     height: 6rem;
-    // background-size: cover;
+
+    @include respond(tab-port) {
+      height: 4rem;
+    }
   }
-
 }
-
-.flex{
+//flex container
+.container {
   display: flex;
   justify-content: space-between;
 
-  @include respond(tab-port){
-    flex-direction: column;;
+  @include respond(tab-port) {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  &__item{
+  &__item {
     flex: 0 1 48%;
   }
 
-  &__item--image{
-    // margin: auto auto auto 0;
-    animation: moveInLeft .4s ease-out;
-
+  &__item--image {
+    animation: moveInLeft 1s ease-in;
   }
 
-  &__item--text{
+  &__item--text {
     max-width: 53rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: auto 0;
-    animation: moveInRight .4s ease-out;
-    & > :not(:last-child){
+    animation: moveInRight 1s ease-in;
+
+    & > :not(:last-child) {
       margin-bottom: 2rem;
     }
 
-    // @include respond(tab-land){
-    //   max-width: 50rem;
-    // }
-    //
-    // @include respond(tab-port){
-    //   max-width: 48rem;
-    // }
-
-    @include respond(tab-port){
+    @include respond(tab-port) {
       align-items: center;
       text-align: center;
-
       margin: 5rem 0;
     }
 
-    @include respond(phone-lg){
+    @include respond(phone-lg) {
       max-width: 44rem;
     }
   }
 
-  &__img-container{
-    // width: 70%;
-  }
-
-  &__img{
+  &__img {
     display: block;
     max-width: 100%;
   }
 }
 
-.social-icons{
-  align-self: flex-end;
+//social-icons
+.social-icons {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  @include respond(tab-port){
-    align-self: center;
-    margin-top: 5rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+  @include respond(tab-port) {
+    justify-content: center;
+    align-items: center;
   }
-  & > *{
+
+  & > * {
     width: 4rem;
     padding: 1rem;
     border: 1px solid var(--color-secondary);
     border-radius: 50%;
   }
-  &> :not(:last-child){
+
+  & > :not(:last-child) {
     margin-right: 2rem;
   }
+}
+
+//attribution frontendmentor
+.attribution {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--color-secondary);
 }

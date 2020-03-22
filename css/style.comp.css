@@ -112,58 +112,59 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .header {
       background-image: url("../images/bg-mobile.svg"); } }
   .header__logo {
     margin-bottom: 5rem;
-    animation: moveInLeft .2s ease-in; }
+    animation: moveInLeft 1s ease-in; }
   .header__logo-img {
     height: 6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .header__logo-img {
+        height: 4rem; } }
 
-.flex {
+.container {
   display: flex;
   justify-content: space-between; }
   @media only screen and (max-width: 56.25em) {
-    .flex {
+    .container {
       flex-direction: column;
       justify-content: center;
       align-items: center; } }
-  .flex__item {
+  .container__item {
     flex: 0 1 48%; }
-  .flex__item--image {
-    animation: moveInLeft .4s ease-out; }
-  .flex__item--text {
+  .container__item--image {
+    animation: moveInLeft 1s ease-in; }
+  .container__item--text {
     max-width: 53rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: auto 0;
-    animation: moveInRight .4s ease-out; }
-    .flex__item--text > :not(:last-child) {
+    animation: moveInRight 1s ease-in; }
+    .container__item--text > :not(:last-child) {
       margin-bottom: 2rem; }
     @media only screen and (max-width: 56.25em) {
-      .flex__item--text {
+      .container__item--text {
         align-items: center;
         text-align: center;
         margin: 5rem 0; } }
     @media only screen and (max-width: 37.5em) {
-      .flex__item--text {
+      .container__item--text {
         max-width: 44rem; } }
-  .flex__img {
+  .container__img {
     display: block;
     max-width: 100%; }
 
 .social-icons {
-  align-self: flex-end;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: flex-end;
+  align-items: flex-end; }
   @media only screen and (max-width: 56.25em) {
     .social-icons {
-      align-self: center;
-      margin-top: 5rem; } }
+      justify-content: center;
+      align-items: center; } }
   .social-icons > * {
     width: 4rem;
     padding: 1rem;
@@ -171,3 +172,9 @@ body {
     border-radius: 50%; }
   .social-icons > :not(:last-child) {
     margin-right: 2rem; }
+
+.attribution {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--color-secondary); }
